@@ -1,10 +1,12 @@
-import React, {useContext} from "react";
+import React, {useContext, createContext} from "react";
+ 
 
-import AuthProvider from "./AuthProvider";
-
+const AuthContext = createContext(true as any);
 
 const LoginButton = () => {
-    const { isLoggedIn, setIsLoggedIn } = useContext(AuthProvider as any);
+
+
+    const { isLoggedIn, setIsLoggedIn } = useContext(AuthContext);
     return (
         <button onClick={() => setIsLoggedIn(!isLoggedIn)}>
             {isLoggedIn ? 'Logout' : 'Login'}

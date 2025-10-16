@@ -5,6 +5,10 @@ import './App.css'
 import FeaturesApp from './features/FeaturesApp';
 import ExampleOfUseLayoutEffect from './features/ExampleOfUseLayoutEffect';
 
+import ExampleOfUseContext from './features/ExampleOfUseContext';
+import TestContextApp from './features/useContextExample/TestContextApp';
+ 
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -12,7 +16,10 @@ function App() {
     <>
       <div>
          {/* <FeaturesApp /> */}
-         <ExampleOfUseLayoutEffect/>
+         {/* <ExampleOfUseLayoutEffect/> */}
+         {/* <ExampleOfUseContext/> */}
+
+         <TestContextApp/>
       </div> 
     </>
   )
